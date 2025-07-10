@@ -86,8 +86,8 @@ markdown_extensions:
 nav:
   - Home:
     - Index: index.md
-  - C++:
-    - Index: cpp/index.md
+  #- C++:
+  #  - Index: cpp/index.md
 
 
 #plugins:
