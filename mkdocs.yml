@@ -9,7 +9,7 @@ theme:
   features:
     - navigation.tabs
     #- navigation.instant
-    #- navigation.sections
+    - navigation.sections
     #- toc.integrate
     - search.suggest
     - search.highlight
@@ -90,6 +90,6 @@ nav:
     - Index: cpp/index.md
 
 
-plugins:
- - offline
- - search
+#plugins:
+# - offline
+# - search
