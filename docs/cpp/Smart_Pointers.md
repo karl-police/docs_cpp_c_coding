@@ -13,6 +13,9 @@ It's basically like initializing a _**raw pointer**_, except that it can call ``
 
 See this **<a>https://godbolt.org/z/7njs4Kdx6</a>** which sort of shows a full comprehensive overview of ``std::unique_ptr`` itself alone.
 
+See also https://godbolt.org/z/65Mvx876v and https://godbolt.org/z/7PsrYdWx7 for a sort of comparison.
+
+
 Additionally:
 
 * https://godbolt.org/z/TG7j4PnGv
