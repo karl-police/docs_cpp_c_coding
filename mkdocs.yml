@@ -9,8 +9,8 @@ theme:
   features:
     - navigation.tabs
     #- navigation.instant
-    - navigation.sections
-    - toc.integrate # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration
+    #- navigation.sections
+    #- toc.integrate # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration
     - search.suggest
     - search.highlight
     - content.code.annotation
@@ -83,9 +83,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-nav:
-  - Home:
-    - Index: index.md
+#nav:
+#  - Home:
+#    - Index: index.md
   #- C++:
   #  - Index: cpp/index.md
 
