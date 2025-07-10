@@ -72,6 +72,7 @@ markdown_extensions:
   - admonition
   - footnotes
   - abbr
+  - autolink
 
   - attr_list
   - md_in_html
@@ -86,8 +87,8 @@ markdown_extensions:
 #nav:
 #  - Home:
 #    - Index: index.md
-  #- C++:
-  #  - Index: cpp/index.md
+# - C++:
+#  - Index: cpp/index.md
 
 
 #plugins:
