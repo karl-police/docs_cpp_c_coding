@@ -9,7 +9,7 @@ theme:
   features:
     - navigation.tabs
     #- navigation.instant
-    #- navigation.sections
+    - navigation.sections
     #- toc.integrate # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration
     - search.suggest
     - search.highlight
