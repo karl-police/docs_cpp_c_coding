@@ -2,8 +2,9 @@
 
 **Be careful!**
 
-Be careful whenever creating a new pointer, e.g. like that.
+Be careful whenever creating a new **pointer**
 
+_e.g. like this_
 ```cpp
 int* p_IntTest = new int(5);
 ```
@@ -11,8 +12,8 @@ This here will _allocate_ to the memory.
 
 
 **See:**
-- https://godbolt.org/z/WqnT8957Y
-- https://godbolt.org/z/Wzn1WcPhs
+<li>https://godbolt.org/z/WqnT8957Y</li>
+<li>https://godbolt.org/z/Wzn1WcPhs</li>
 
 
 <br>
@@ -27,7 +28,7 @@ However, in C++ there are very additional special pointers, e.g. [std::unique_pt
 Note on **godbolt** ``-fsanitize=address`` can hint on Memory Leaks. LeakSanitizer doesn't exist on Windows though.
 But there are workarounds for it as well.
 
-Additionally:
+**Additionally:**
 
 ``-Wall -Wextra -Werror -Wpedantic``
 or on Windows ``/W4``, I think.
@@ -36,5 +37,3 @@ or on Windows ``/W4``, I think.
 <br>
 <br>
 <br>
-
-# Smart Pointers
