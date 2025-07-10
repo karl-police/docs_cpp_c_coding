@@ -1,0 +1,92 @@
+site_name: docs_cpp_c_coding
+
+#repo_name: docs_cpp_c_coding
+#repo_url: https://github.com/karl-police/docs_cpp_c_coding
+
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    #- navigation.instant
+    #- navigation.sections
+    #- toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips
+
+  language: en
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+#extra_css:
+#  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/tags.js
+
+markdown_extensions:
+  - docs.extensions.func_args
+  - docs.extensions.func_returns
+
+  - pymdownx.highlight:
+        use_pygments: true
+        anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.details
+
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+
+  - pymdownx.arithmatex:
+      generic: true
+
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - abbr
+
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home:
+    - Index: index.md
