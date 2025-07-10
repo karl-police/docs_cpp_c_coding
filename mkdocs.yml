@@ -1,16 +1,16 @@
 site_name: docs_cpp_c_coding
 
-#repo_name: docs_cpp_c_coding
-#repo_url: https://github.com/karl-police/docs_cpp_c_coding
+repo_name: docs_cpp_c_coding
+repo_url: https://github.com/karl-police/docs_cpp_c_coding
 
 
+# https://squidfunk.github.io/mkdocs-material/setup
 theme:
   name: material
   features:
     - navigation.tabs
     #- navigation.instant
     - navigation.sections
-    #- toc.integrate # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration
     - search.suggest
     - search.highlight
     - content.code.annotation
