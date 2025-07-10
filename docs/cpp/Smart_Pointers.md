@@ -1,8 +1,9 @@
 # Smart Pointers
 
 <sub>See also _<a>https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp</a>_</sub>
+<br><br>
 
-Smart Pointers are Pointers that have their own sort of memory management "technology", at cost of heap allocation. Depends, what kind of Smart Pointer, I guess.
+**Smart Pointers** are Pointers that have their own sort of memory management "technology", at cost of heap allocation. Depends, what kind of Smart Pointer, I guess.
 
 This means that these smart pointers seem to know their scope and if they're unused, they should delete itself.
 
