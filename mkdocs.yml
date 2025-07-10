@@ -83,6 +83,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-nav:
-  - Home:
-    - Index: index.md
+#nav:
+#  - Home:
+#    - Index: index.md
+
+
+plugins:
+ - offline
+ - search
