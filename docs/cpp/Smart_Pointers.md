@@ -20,3 +20,8 @@ Additionally:
 * https://godbolt.org/z/4Meo9zWej
 * https://godbolt.org/z/zb5nneEzb
 * https://godbolt.org/z/q7h8M7rzY
+
+
+also:
+
+* https://godbolt.org/z/vsKMh9oc5 and https://godbolt.org/z/jKaGv45Ks
