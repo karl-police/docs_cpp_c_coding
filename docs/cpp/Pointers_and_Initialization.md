@@ -11,9 +11,9 @@ int* p_IntTest = new int(5);
 This here will _allocate_ to the memory.
 
 
-**See:**
-<li>https://godbolt.org/z/WqnT8957Y</li>
-<li>https://godbolt.org/z/Wzn1WcPhs</li>
+**See:**<br>
+* https://godbolt.org/z/WqnT8957Y
+* https://godbolt.org/z/Wzn1WcPhs
 
 
 <br>
