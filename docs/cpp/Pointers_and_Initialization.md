@@ -7,14 +7,17 @@ Be careful whenever creating a new pointer, e.g. like that.
 ```cpp
 int* p_IntTest = new int(5);
 ```
-
-See:
-
-* https://godbolt.org/z/WqnT8957Y
-* https://godbolt.org/z/Wzn1WcPhs
+This here will _allocate_ to the memory.
 
 
-Such pointers need to manually be deleted, or else it will result in a **Memory Leak**.
+**See:**
+- https://godbolt.org/z/WqnT8957Y
+- https://godbolt.org/z/Wzn1WcPhs
+
+
+<br>
+
+Such pointers need to be **manually deleted**, or else it will result in a **Memory Leak**.
 
 To delete you'd do ``delete p_IntTest``
 
