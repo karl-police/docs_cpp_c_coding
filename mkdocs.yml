@@ -74,7 +74,7 @@ markdown_extensions:
   - admonition
   - footnotes
   - abbr
-  - autolink
+  - pymdownx.magiclink
 
   - attr_list
   - md_in_html
