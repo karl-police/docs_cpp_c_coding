@@ -1,7 +1,7 @@
-site_name: docs_cpp_c_coding
+site_name: docs_cpp_c_coding_mkdocs
 
-repo_name: docs_cpp_c_coding
-repo_url: https://github.com/karl-police/docs_cpp_c_coding
+repo_name: docs_cpp_c_coding_mkdocs
+repo_url: https://github.com/karl-police/docs_cpp_c_coding_mkdocs
 
 
 # https://squidfunk.github.io/mkdocs-material/setup
