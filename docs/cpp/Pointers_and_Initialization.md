@@ -2,7 +2,7 @@
 
 **Be careful!**
 
-Be careful whenever creating a new **pointer**
+Be careful whenever creating a new _raw_ **pointer**
 
 _e.g. like this_
 ```cpp
