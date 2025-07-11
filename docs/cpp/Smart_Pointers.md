@@ -35,8 +35,11 @@ Also, see this for within structs:
 
 * https://godbolt.org/z/vsKMh9oc5 and https://godbolt.org/z/jKaGv45Ks
 
+<br>
 
 ## **[``std::shared_ptr``](https://en.cppreference.com/w/cpp/memory/shared_ptr.html)**
 
+
+<br>
 
 ## **[``std::weak_ptr``](https://en.cppreference.com/w/cpp/memory/weak_ptr.html)**
