@@ -72,7 +72,10 @@ This is why it's called **"shared"**, while **"unique"** is limited to own the s
 
 <sub>See _https://godbolt.org/z/vsTE9cssG and https://godbolt.org/z/fjPMnYWcT_ for what would happen if more than one ``unique_ptr`` would initialize from the same pointer.</sub>
 
-See https://godbolt.org/z/YMYGK6Wh9
+_See **https://godbolt.org/z/xd9Tz184n** and **https://godbolt.org/z/YMYGK6Wh9**._
+
+
+``std::shared_ptr`` that own the same object, will obviously also point at the same address. Hence why a _"shared pointer"_.
 
 
 ### **[``std::make_shared``](https://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html)**
@@ -91,6 +94,21 @@ std::shared_ptr<int> sharedPointer = std::make_shared<int>(123);
 <br>
 
 ## **[``std::weak_ptr``](https://en.cppreference.com/w/cpp/memory/weak_ptr.html)**
+
+A ``std::weak_ptr`` is used to point to other ``std::shared_ptr`` without actually claiming ownership of one.
+
+See **_https://godbolt.org/z/eGabaY1WG_**.
+
+<br>
+
+It's also used to break cycles, e.g. useful when having a "Node" that points to previous nodes.
+
+For instance, you may want the **parent** Node to be a **"weak reference"**, and the child node a full ``std::shared_ptr``,
+so that the Node owns the child object.
+
+For instance, in a Folder structure, Folder A is in Folder B, and Folder B owns things inside of it.
+However, Folder B is the parent of Folder A. Hence why Folder B **should not own** Folder A. Therefore a ``std::weak_ptr`` should be used.
+
 
 
 <br><br>
