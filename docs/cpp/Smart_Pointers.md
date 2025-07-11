@@ -125,6 +125,7 @@ std::unique_ptr<int> valuePtrNow(std::move(valuePtr));
 ```
 
 
-See also
+See also:
+
 * https://godbolt.org/z/f99Pq5vzP
 * https://godbolt.org/z/vWeo7Toje
