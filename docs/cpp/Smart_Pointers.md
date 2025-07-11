@@ -50,10 +50,18 @@ Also, see this for within structs:
 
 ### **[``std::make_unique``](https://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique)**
 
-``std::make_unique`` can be used to intialize a ``std::unique_ptr``'s value.
+``std::make_unique`` can be used to _directly_ intialize a ``std::unique_ptr``'s value with ``=``.
 
 Note that, if you have **raw pointers** in a struct, that they are still due to manual memory management, unless replaced with a Smart Pointer.
 
+Note that ``std::make_unique`` returns a ``std::unique_ptr``.
+
+```cpp
+std::unique_ptr<int> uniquePointer = std::make_unique<int>(123);
+```
+
+<sub>It's better like that, instead of passing it into the constructor of ``std::unique_ptr variable()`` itself. If you see it in any example code, don't mind it
+but avoid actually doing that, I guess.</sub>
 
 <br>
 
@@ -64,15 +72,21 @@ This is why it's called **"shared"**, while **"unique"** is limited to own the s
 
 <sub>See _https://godbolt.org/z/vsTE9cssG and https://godbolt.org/z/fjPMnYWcT_ for what would happen if more than one ``unique_ptr`` would initialize from the same pointer.</sub>
 
-
+See https://godbolt.org/z/YMYGK6Wh9
 
 
 ### **[``std::make_shared``](https://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html)**
 
 ``std::make_shared`` is used to create a shared object that can be used by multiple ``std::shared_ptr``.
 
-It's more efficient to use ``std::make_shared`` for ``std::shared_ptr``.
+You should use ``std::make_shared`` for ``std::shared_ptr``. If ``std::shared_ptr`` is not in the same control block,
+it may believe, that it is the sole owner and unexpectedly delete the object.
 
+Note that ``std::make_shared`` returns a ``std::shared_ptr``.
+
+```cpp
+std::shared_ptr<int> sharedPointer = std::make_shared<int>(123);
+```
 
 <br>
 
