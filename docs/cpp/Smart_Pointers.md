@@ -120,8 +120,8 @@ However, Folder B is the parent of Folder A. Hence why Folder B **should not own
 This here would make ``valuePtr`` not own an object when it gets moved to the other ``std::unique_ptr``.
 
 ```cpp
-    std::unique_ptr<int> valuePtr(new int(15));
-    std::unique_ptr<int> valuePtrNow(std::move(valuePtr));
+std::unique_ptr<int> valuePtr(new int(15));
+std::unique_ptr<int> valuePtrNow(std::move(valuePtr));
 ```
 
 
