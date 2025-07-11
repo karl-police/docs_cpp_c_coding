@@ -14,6 +14,8 @@ It's basically like initializing a _**raw pointer**_, except that it can call ``
 
 ``std::unique_ptr<T, Deleter (optional)>`` create a ``unique_ptr`` out of a class, with an optional custom Deleter, _e.g. if you wanted to log the deletions for debugging purposes_.
 
+It also provides methods to swap pointers out and more. _See the C++ docs for more info._
+
 See this **<a>https://godbolt.org/z/7njs4Kdx6</a>** which sort of shows a full comprehensive overview of ``std::unique_ptr`` itself alone.
 
 See also https://godbolt.org/z/65Mvx876v and https://godbolt.org/z/7PsrYdWx7 for a sort of comparison.
@@ -28,6 +30,8 @@ Additionally:
 * https://godbolt.org/z/q7h8M7rzY
 
 
-also:
+Also, see this for within structs:
 
 * https://godbolt.org/z/vsKMh9oc5 and https://godbolt.org/z/jKaGv45Ks
+
+
