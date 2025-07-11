@@ -3,7 +3,7 @@
 <sub>See also _<a>https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp</a>_</sub>
 <br><br>
 
-**Smart Pointers** are Pointers that have their own sort of memory management "technology", at cost of heap allocation. Depends, what kind of Smart Pointer, I guess.
+In modern C++, **Smart Pointers** are Pointers that have their own sort of memory management "technology", at cost of heap allocation. Depends, what kind of Smart Pointer, I guess.
 
 This means that these smart pointers seem to know their scope and if they're unused, they should delete itself.
 
@@ -18,7 +18,7 @@ It also provides methods to swap pointers out and more. _See the C++ docs for mo
 
 See this **<a>https://godbolt.org/z/7njs4Kdx6</a>** which sort of shows a full comprehensive overview of ``std::unique_ptr`` itself alone.
 
-See also https://godbolt.org/z/65Mvx876v and https://godbolt.org/z/7PsrYdWx7 for a sort of comparison.
+See also https://godbolt.org/z/65Mvx876v and https://godbolt.org/z/7PsrYdWx7 for a sort of comparison for with and without ``std::unique_ptr``.
 
 
 Additionally:
@@ -29,6 +29,7 @@ Additionally:
 * https://godbolt.org/z/zb5nneEzb
 * https://godbolt.org/z/q7h8M7rzY
 
+<br>
 
 Also, see this for within structs:
 
