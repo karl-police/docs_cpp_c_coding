@@ -10,7 +10,7 @@ This means that these smart pointers seem to know their scope and if they're unu
 It's basically like initializing a _**raw pointer**_, except that it can call ``delete`` on its own.
 
 
-## [**``std::unique_ptr``**](https://en.cppreference.com/w/cpp/memory/unique_ptr.html)
+## [**``std::unique_ptr<T, Deleter>``**](https://en.cppreference.com/w/cpp/memory/unique_ptr.html)
 
 See this **<a>https://godbolt.org/z/7njs4Kdx6</a>** which sort of shows a full comprehensive overview of ``std::unique_ptr`` itself alone.
 
