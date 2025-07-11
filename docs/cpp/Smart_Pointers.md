@@ -48,7 +48,7 @@ Also, see this for within structs:
 * https://godbolt.org/z/vsKMh9oc5 and https://godbolt.org/z/jKaGv45Ks
 
 
-### **``[std::make_unique](https://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique)``**
+### **[``std::make_unique``](https://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique)**
 
 ``std::make_unique`` can be used to intialize a ``std::unique_ptr``'s value.
 
@@ -67,7 +67,7 @@ This is why it's called **"shared"**, while **"unique"** is limited to own the s
 
 
 
-### **``[std::make_shared](https://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html)``**
+### **[``std::make_shared``](https://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared.html)**
 
 ``std::make_shared`` is used to create a shared object that can be used by multiple ``std::shared_ptr``.
 
